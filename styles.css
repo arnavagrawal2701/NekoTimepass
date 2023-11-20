@@ -1,0 +1,80 @@
+@keyframes blink {
+    0%, 100% {
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(0.5);
+    }
+}
+
+.cat-eye {
+    position: absolute;
+    width: 40px;
+    background: #ffffff;
+    padding: 21px;
+    top: -100px;
+    left: -32px;
+    clip-path: circle(50% at 50% 50%);
+}
+
+#eye1-bg{
+    background: #f18663;
+    padding: 23px;
+    left: -37px;
+}
+#eye2-bg{
+    background: #f18663;
+    padding: 23px;
+    left: 1px;
+}
+
+#cat-eye2 {
+    left: 0px;
+}
+
+.cat-eyelash {
+    position: absolute;
+    width: 40px;
+    background: #f18663;
+    padding: 23px;
+    top: -124px;
+    left: -1px;
+    clip-path: circle(50% at 50% 100%);
+    animation: blink 5s -5s infinite alternate ease-in-out;
+}
+
+#cat-eyelash-up1 {
+    top: -124px;
+    left: -35px;
+}
+
+.cat-eyelash-up2 {
+    top: -124px;
+    left: -3px;
+}
+
+#cat-eyelash-low1 {
+    top: -77px;
+    left: -35px;
+    clip-path: circle(50% at 50% 0%);
+}
+
+#cat-eyelash-low2 {
+    top: -77px;
+    left: -3px;
+    clip-path: circle(50% at 50% 0%);
+}
+
+.cat-eyeball{
+    position: absolute;
+    width: 24px;
+    height: 96px;
+    background-image: radial-gradient(#000000 2.4px, transparent 2.4px),
+    radial-gradient(circle, #ff9900 7.2px, #ff4d00 12px, transparent 12px);
+    top: -124px;
+    left: -20px;
+}
+
+#cat-eyeball2{
+    left: 10px;
+}
